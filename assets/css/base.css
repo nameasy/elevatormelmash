@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility
+}
+
+*, ::before, ::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	outline: none;
+	padding: 0
+}
+
+::-moz-selection {
+	background-color: #222;
+	color: #fff
+}
+
+::selection {
+	background-color: #222;
+	color: #fff
+}
+
+a, abbr, acronym, address, applet, area, article, aside, audio, b, base, basefont, bdo, bgsound, big, blink, blockquote, body, br, button, canvas, caption, center, cite, code, col, colgroup, command, datalist, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, frame, frameset, h1, h2, h3, h4, h5, h6, head, header, hgroup, hr, html, i, iframe, input, ins, kbd, keygen, label, legend, li, link, listing, main, map, mark, marquee, math, menu, meta, meter, nav, nextid, nobr, noembed, noframes, noscript, object, ol, optgroup, option, output, p, param, plaintext, pre, progress, q, rp, rt, ruby, s, samp, script, section, select, source, spacer, span, strike, strong, style, sub, summary, sup, svg, table, tbody, td, textarea, tfoot, th, thead, time, title, tr, track, tt, u, ul, var, video, wbr, xmp {
+	border: 0 none
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block
+}
+
+blockquote, q {
+	quotes: none
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	overflow-x: hidden
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+img, svg {
+	display: inline-block;
+	fill: currentColor;
+	vertical-align: middle
+}
+
+img, svg, video {
+	height: auto;
+	max-width: 100%
+}
+
+ol, ul {
+	list-style: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+td:not([align]), th:not([align]) {
+	border: 1px solid #dcdcdc;
+	padding: 9px 16px 11px;
+	text-align: center;
+	vertical-align: top
+}
+
+button, input, select, textarea {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px
+}

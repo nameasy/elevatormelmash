@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        Элеватормельмаш
+    </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="assets/css/swiper.css" rel="stylesheet">
+    <link href="assets/css/base.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="page">
+    <svg class="is-hidden">
+        <symbol height="22" id="arrow" viewbox="0 0 39 22" width="39">
+            <rect fill="white" height="1" transform="matrix(-1 0 0 1 38 10.0366)" width="38">
+            </rect>
+            <rect fill="white" height="0.992478" transform="matrix(-0.712466 -0.701706 -0.712466 0.701706 39 10.5364)" width="15.0155">
+            </rect>
+            <rect fill="white" height="0.992478" transform="matrix(-0.712466 0.701706 0.712466 0.701706 38.293 9.84009)" width="15.0312">
+            </rect>
+        </symbol>
+        <symbol height="39" id="arrow-left" viewbox="0 0 62 39" width="62">
+            <rect fill="white" height="1" width="61" x="1" y="19.0001">
+            </rect>
+            <rect fill="white" height="0.992478" transform="matrix(0.712466 -0.701706 0.712466 0.701706 0 19.5)" width="27.7894">
+            </rect>
+            <rect fill="white" height="0.992478" transform="matrix(0.712466 0.701706 -0.712466 0.701706 0.707031 18.8036)" width="27.7894">
+            </rect>
+        </symbol>
+        <symbol height="39" id="arrow-right" viewbox="0 0 62 39" width="62">
+            <rect fill="white" height="1" transform="matrix(-1 0 0 1 61 19.0001)" width="61">
+            </rect>
+            <rect fill="white" height="0.992478" transform="matrix(-0.712466 -0.701706 -0.712466 0.701706 62 19.5)" width="27.7894">
+            </rect>
+            <rect fill="white" height="0.992478" transform="matrix(-0.712466 0.701706 0.712466 0.701706 61.293 18.8036)" width="27.7894">
+            </rect>
+        </symbol>
+        <symbol height="27" id="search" viewbox="0 0 27 27" width="27">
+            <path d="M16.7703 16.5374C19.6748 13.6329 19.6748 8.92369 16.7703 6.01917C13.8658 3.11464 9.15662 3.11464 6.2521 6.01917C3.34758 8.92369 3.34758 13.6329 6.2521 16.5374C9.15662 19.4419 13.8658 19.4419 16.7703 16.5374ZM17.6131 18.6417C13.8564 21.7623 8.2712 21.5617 4.7495 18.04C1.01511 14.3056 1.01511 8.25095 4.7495 4.51657C8.48388 0.782177 14.5385 0.782177 18.2729 4.51657C21.6813 7.92497 21.9788 13.2662 19.1655 17.0121L23.446 21.2926C23.884 21.7306 23.886 22.4388 23.4436 22.8812C23.0043 23.3205 22.2877 23.3163 21.855 22.8836L17.6131 18.6417Z" fill="white">
+            </path>
+        </symbol>
+        <symbol height="29" id="location" viewbox="0 0 20 29" width="20">
+            <path d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 17.3 8.88 27.25 9.26 27.67C9.35379 27.7748 9.46862 27.8585 9.597 27.9159C9.72537 27.9733 9.86439 28.0029 10.005 28.0029C10.1456 28.0029 10.2846 27.9733 10.413 27.9159C10.5414 27.8585 10.6562 27.7748 10.75 27.67C11.12 27.25 20 17.3 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM10 25.46C7.89 22.93 2 15.39 2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 15.39 12.11 22.93 10 25.46Z" fill="#69A54D">
+            </path>
+            <path d="M10 5C9.20888 5 8.43552 5.2346 7.77772 5.67412C7.11992 6.11365 6.60723 6.73836 6.30448 7.46926C6.00173 8.20017 5.92252 9.00444 6.07686 9.78036C6.2312 10.5563 6.61216 11.269 7.17157 11.8284C7.73098 12.3878 8.44372 12.7688 9.21964 12.9231C9.99556 13.0775 10.7998 12.9983 11.5307 12.6955C12.2616 12.3928 12.8864 11.8801 13.3259 11.2223C13.7654 10.5645 14 9.79112 14 9C14 7.93913 13.5786 6.92172 12.8284 6.17157C12.0783 5.42143 11.0609 5 10 5ZM10 11C9.60444 11 9.21776 10.8827 8.88886 10.6629C8.55996 10.4432 8.30362 10.1308 8.15224 9.76536C8.00087 9.39991 7.96126 8.99778 8.03843 8.60982C8.1156 8.22186 8.30608 7.86549 8.58579 7.58579C8.86549 7.30608 9.22186 7.1156 9.60982 7.03843C9.99778 6.96126 10.3999 7.00086 10.7654 7.15224C11.1308 7.30362 11.4432 7.55996 11.6629 7.88886C11.8827 8.21776 12 8.60444 12 9C12 9.53043 11.7893 10.0391 11.4142 10.4142C11.0391 10.7893 10.5304 11 10 11Z" fill="#69A54D">
+            </path>
+        </symbol>
+    </svg>
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <div class="header__left">
+                    <a href="index.html"><img alt="" class="header__img" src="assets/img/header-logo.png"></a>
+                </div>
+
+                <div class="header__right">
+                    <div class="header__row">
+                        <div class="header__column">
+                            <nav class="header__nav nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="index.html">О компании</a>
+                                    </li>
+
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="about.html">Вакансии</a>
+                                    </li>
+
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="news.html">Новости</a>
+                                    </li>
+
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="feedback.html">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header__column column">
+                            <ul class="header__list">
+                                <div class="column__left">
+                                    <li class="header__item">
+                                        <a class="header__link is-active" href="#!">Ru</a>
+                                    </li>
+
+                                    <li class="header__item header__item--divider">
+                                    </li>
+
+                                    <li class="header__item">
+                                        <a class="header__link" href="#!">En</a>
+                                    </li>
+                                </div>
+
+                                <div class="column__right">
+                                    <li class="header__item">
+                                        <div class="header__dropdown">
+                                            <select class="header__select">
+                                                <option value="">
+                                                    Выбрать язык
+                                                </option>
+                                                <option value="az">
+                                                    азербайджанский
+                                                </option>
+                                                <option value="sq">
+                                                    албанский
+                                                </option>
+                                                <option value="en">
+                                                    английский
+                                                </option>
+                                                <option value="ar">
+                                                    арабский
+                                                </option>
+                                                <option value="hy">
+                                                    армянский
+                                                </option>
+                                                <option value="be">
+                                                    белорусский
+                                                </option>
+                                                <option value="bg">
+                                                    болгарский
+                                                </option>
+                                                <option value="bs">
+                                                    боснийский
+                                                </option>
+                                                <option value="hu">
+                                                    венгерский
+                                                </option>
+                                                <option value="vi">
+                                                    вьетнамский
+                                                </option>
+                                                <option value="el">
+                                                    греческий
+                                                </option>
+                                                <option value="ka">
+                                                    грузинский
+                                                </option>
+                                                <option value="es">
+                                                    испанский
+                                                </option>
+                                                <option value="it">
+                                                    итальянский
+                                                </option>
+                                                <option value="kk">
+                                                    казахский
+                                                </option>
+                                                <option value="ky">
+                                                    киргизский
+                                                </option>
+                                                <option value="zh-TW">
+                                                    китайский (традиционный)
+                                                </option>
+                                                <option value="ko">
+                                                    корейский
+                                                </option>
+                                                <option value="lv">
+                                                    латышский
+                                                </option>
+                                                <option value="lt">
+                                                    литовский
+                                                </option>
+                                                <option value="mn">
+                                                    монгольский
+                                                </option>
+                                                <option value="de">
+                                                    немецкий
+                                                </option>
+                                                <option value="ne">
+                                                    непальский
+                                                </option>
+                                                <option value="nl">
+                                                    нидерландский
+                                                </option>
+                                                <option value="no">
+                                                    норвежский
+                                                </option>
+                                                <option value="pl">
+                                                    польский
+                                                </option>
+                                                <option value="pt">
+                                                    португальский
+                                                </option>
+                                                <option value="ro">
+                                                    румынский
+                                                </option>
+                                                <option value="sr">
+                                                    сербский
+                                                </option>
+                                                <option value="sk">
+                                                    словацкий
+                                                </option>
+                                                <option value="sl">
+                                                    словенский
+                                                </option>
+                                                <option value="tg">
+                                                    таджикский
+                                                </option>
+                                                <option value="tt">
+                                                    татарский
+                                                </option>
+                                                <option value="tr">
+                                                    турецкий
+                                                </option>
+                                                <option value="tk">
+                                                    туркменский
+                                                </option>
+                                                <option value="uz">
+                                                    узбекский
+                                                </option>
+                                                <option value="uk">
+                                                    украинский
+                                                </option>
+                                                <option value="fi">
+                                                    финский
+                                                </option>
+                                                <option value="fr">
+                                                    французский
+                                                </option>
+                                                <option value="hr">
+                                                    хорватский
+                                                </option>
+                                                <option value="cs">
+                                                    чешский
+                                                </option>
+                                                <option value="sv">
+                                                    шведский
+                                                </option>
+                                                <option value="et">
+                                                    эстонский
+                                                </option>
+                                                <option value="ja">
+                                                    японский
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header__row">
+                        <div class="header__column">
+                            <p class="header__text">
+                                <span class="schedule">пн–пт 8:00–17:00, перерыв 12:00–13:00, сб–вс: выходной</span>
+                            </p>
+                        </div>
+
+                        <div class="header__column">
+                            <a class="header__text"><span class="email">sale@semm.ru</span></a>
+                            <p class="header__text">
+                                <span class="phone">8 (86138) 6-34-03</span>, <span class="phone">6-34-06</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="swiper">
+                <ul class="swiper__list">
+                    <li class="swiper__item">
+                        <div class="swiper__thumbnail" style="background-image: url(assets/img/slides/1.jpg)">
+                        </div>
+
+                        <div class="swiper__overlay">
+                            <div class="swiper__heading">
+                                Элеватормельмаш
+                            </div>
+
+                            <p class="swiper__text">
+                                Крупнейший поставщик продукции для агропромышленного<br>
+                                комплекса России и ближнего зарубежья
+                            </p>
+
+                            <div class="swiper__numeral">
+                                01
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper__item">
+                        <div class="swiper__thumbnail" style="background-image: url(assets/img/slides/2.jpg)">
+                        </div>
+
+                        <div class="swiper__overlay">
+                            <div class="swiper__heading">
+                                Котлы
+                            </div>
+
+                            <p class="swiper__text">
+                                Котлы паровые, водогрейные, горизонтальные, вертикальные, газовые,<br>
+                                твердотопливные, на&nbsp;жидком топливе от&nbsp;надежного поставщика АО&nbsp;&laquo;Элеватормельмаш&raquo;
+                            </p>
+
+                            <div class="swiper__numeral">
+                                02
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="swiper__control">
+                    <div class="container">
+                        <div class="swiper__button-prev">
+                            <svg class="swiper__icon">
+                                <use xlink:href="#arrow-left">
+                                </use>
+                            </svg>
+                        </div>
+
+                        <div class="swiper__button-next">
+                            <svg class="swiper__icon">
+                                <use xlink:href="#arrow-right">
+                                </use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <div class="container">
+                    <div class="subnav__left">
+                        <a class="subnav__link">Элеваторное оборудование</a> <a class="subnav__link">Котлы</a> <a class="subnav__link">Металлоконструкции</a> <a class="subnav__link">Услуги</a>
+                    </div>
+
+                    <div class="subnav__right">
+                        <svg class="subnav__icon">
+                            <use xlink:href="#search">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h1>
+                    Продукция для аграрной промышленности
+                </h1>
+
+                <p>
+                    АО&nbsp;&laquo;Элеватормельмаш&raquo; г. Кропоткин на&nbsp;протяжении 75&nbsp;лет является крупнейшим поставщиком продукции для агропромышленного комплекса России и&nbsp;ближнего зарубежья.<br>
+                    Предприятие выпускает большой спектр оборудования в&nbsp;которые входит: элеваторное оборудование, промышленные котлы, бетоносмесители, металлоконструкции и&nbsp;металлические формы для свай.
+                </p>
+
+                <p>
+                    Собственное конструкторское бюро позволяет разрабатывать новую, а&nbsp;так&nbsp;же регулярно улучшать и&nbsp;модернизировать существующую продукцию.
+                </p>
+
+                <ul class="about__list">
+                    <li class="about__item">
+                        <div class="about__numeral numeral">
+                            75<span class="numeral__text"> лет</span>
+                        </div>
+
+                        <p class="about__text">
+                            опыта на рынке<br>
+                            агропромышленного<br>
+                            комплекса
+                        </p>
+                    </li>
+
+                    <li class="about__item">
+                        <div class="about__numeral numeral">
+                            <span class="numeral__text">&gt; </span>200
+                        </div>
+
+                        <p class="about__text">
+                            видов мельнично —<br>
+                            элеваторного<br>
+                            оборудования
+                        </p>
+                    </li>
+
+                    <li class="about__item">
+                        <div class="about__numeral">
+                            25
+                        </div>
+
+                        <p class="about__text">
+                            видов котлов<br>
+                            промышленного<br>
+                            назначения
+                        </p>
+                    </li>
+
+                    <li class="about__item">
+                        <div class="about__numeral">
+                            20
+                        </div>
+
+                        <p class="about__text">
+                            почвообрабатывающей<br>
+                            техники
+                        </p>
+                    </li>
+
+                    <li class="about__item">
+                        <div class="about__numeral">
+                            35
+                        </div>
+
+                        <p class="about__text">
+                            регионов поставки<br>
+                            продукции
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="elevator-equipment">
+            <div class="container">
+                <h2>
+                    Элеваторное оборудование
+                </h2>
+
+                <ul class="elevator-equipment__list">
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/1.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Автомобиле-разгрузчики
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/2.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Конвейеры
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/3.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Пробоотборники
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/4.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Циклоны
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/5.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Нории
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/6.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Переработка маслосемян
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/7.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Клапаны
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/8.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Задвижки реечные
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/9.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Тележка сбрасывающая
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/10.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Шлюзовый затвор
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item card">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/11.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Затвор огнепреграждающий
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="elevator-equipment__item">
+                        <a class="elevator-equipment__link" href="#!">
+                            <div class="elevator-equipment__thumbnail" style="background-image: url(assets/img/elevator-equipment/12.png)">
+                            </div>
+
+                            <div class="elevator-equipment__overlay">
+                                <div class="elevator-equipment__heading">
+                                    Устройство загрузки вагонов
+                                </div>
+
+                                <div class="elevator-equipment__action">
+                                    <svg class="elevator-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="other-equipment">
+            <div class="container">
+                <h2>
+                    Другое оборудование
+                </h2>
+
+                <ul class="other-equipment__list">
+                    <li class="other-equipment__item">
+                        <a class="other-equipment__link" href="#!">
+                            <div class="other-equipment__thumbnail" style="background-image: url(assets/img/other-equipment/1.png)">
+                            </div>
+
+                            <div class="other-equipment__overlay">
+                                <div class="other-equipment__heading">
+                                    Котлы
+                                </div>
+
+                                <div class="other-equipment__action">
+                                    <svg class="other-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="other-equipment__item">
+                        <a class="other-equipment__link" href="#!">
+                            <div class="other-equipment__thumbnail" style="background-image: url(assets/img/other-equipment/2.png)">
+                            </div>
+
+                            <div class="other-equipment__overlay">
+                                <div class="other-equipment__heading">
+                                    Дополнительное оборудование
+                                </div>
+
+                                <div class="other-equipment__action">
+                                    <svg class="other-equipment__icon">
+                                        <use xlink:href="#arrow">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Продукция АО&nbsp;&laquo;Элеватормельмаш&raquo; используется на&nbsp;предприятиях Юга, Поволжья и&nbsp;Центральной России, а&nbsp;так&nbsp;же Украины, Казахстана, Молдовы и&nbsp;Белоруссии. Большое количество успешных партнерских отношений подтверждает качество продукции и&nbsp;предоставляемых услуг по&nbsp;установке оборудования и&nbsp;его обслуживанию.
+                </p>
+
+                <p>
+                    В&nbsp;2013 году была проведена крупная модернизация оборудования. Введены в&nbsp;эксплуатацию: станок гидроабразивной резки, четырехволковая машина с&nbsp;ЧПУ и&nbsp;листогибочный станок с&nbsp;ЧПУ. Это сразу позволило на&nbsp;порядок поднять качество выпускаемой продукции , снизить трудоемкость процессов, а&nbsp;так&nbsp;же увеличить ассортимент выпускаемой продукции.
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>
+                    Услуги компании
+                </h2>
+
+                <ul class="services__list">
+                    <li class="services__item">
+                        <a class="services__link" href="#!">
+                            <div class="services__thumbnail" style="background-image: url(assets/img/company-services/1.png)">
+                            </div>
+
+                            <div class="services__overlay">
+                                <div class="services__numeral">
+                                    01
+                                </div>
+                            </div>
+
+                            <div class="services__description">
+                                <div class="services__heading">
+                                    Плазменная резка
+                                </div>
+
+                                <p class="services__text">
+                                    Компания АО&nbsp;&laquo;Элеватормельмаш&raquo; осуществляет литейное производство черных и&nbsp;цветных металлов на&nbsp;профессиональной основе и&nbsp;производит литые детали из&nbsp;чугуна и&nbsp;цветных сплавов по&nbsp;эскизу заказчика.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="services__item">
+                        <a class="services__link" href="#!">
+                            <div class="services__thumbnail" style="background-image: url(assets/img/company-services/2.png)">
+                            </div>
+
+                            <div class="services__overlay">
+                                <div class="services__numeral">
+                                    02
+                                </div>
+                            </div>
+
+                            <div class="services__description">
+                                <div class="services__heading">
+                                    Гидроабразивная резка
+                                </div>
+
+                                <p class="services__text">
+                                    Уникальная технология, которая может производить резку различных материалов, в&nbsp;том числе стекла, пластика, металла и&nbsp;многих других.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="services__item">
+                        <a class="services__link" href="#!">
+                            <div class="services__thumbnail" style="background-image: url(assets/img/company-services/3.png)">
+                            </div>
+
+                            <div class="services__overlay">
+                                <div class="services__numeral">
+                                    03
+                                </div>
+                            </div>
+
+                            <div class="services__description">
+                                <div class="services__heading">
+                                    Изготовление изделий на листогибочном станке с ЧПУ
+                                </div>
+
+                                <p class="services__text">
+                                    Позволяет изготавливать сложные профили, элементов кровли, оконные отливы и&nbsp;т.д. Такой станок незаменим при любых гибочных работах.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="services__item">
+                        <a class="services__link" href="#!">
+                            <div class="services__thumbnail" style="background-image: url(assets/img/company-services/4.png)">
+                            </div>
+
+                            <div class="services__overlay">
+                                <div class="services__numeral">
+                                    04
+                                </div>
+                            </div>
+
+                            <div class="services__description">
+                                <div class="services__heading">
+                                    Производство металлоконструкций
+                                </div>
+
+                                <p class="services__text">
+                                    Металлоконструкции изготавливаются по&nbsp;индивидуальным параметрам с&nbsp;учетом всех пожеланий заказчика.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>
+                    Свяжитесь с нами
+                </h2>
+
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <input class="contact__input" placeholder="ФИО" type="text"> <input class="contact__input" placeholder="Телефон*" type="text"> <input class="contact__input" placeholder="E-mail*" type="text">
+                    </li>
+
+                    <li class="contact__item">
+                        <textarea class="contact__textarea" placeholder="Ваш запрос" rows="6"></textarea>
+                    </li>
+
+                    <li class="contact__item">
+                        <p class="contact__text">
+                            Нажимая на&nbsp;кнопку вы&nbsp;даете согласие на&nbsp;обработку персональных данных
+                        </p>
+                    </li>
+
+                    <li class="contact__item">
+                        <button class="contact__button">Отправить</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <div class="footer__flex">
+                            <img alt="" class="footer__img" src="assets/img/footer-logo.png">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#!">О компании</a>
+                                </li>
+
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#!">Каталог продукции</a>
+                                </li>
+
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#!">Услуги</a>
+                                </li>
+
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#!">Вакансии</a>
+                                </li>
+
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#!">Новости</a>
+                                </li>
+
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Элеваторное оборудование</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Котлы</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Металлоконструкции</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Запчасти на элеваторное оборудование</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Трубы дымовые</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Водонапорные башни</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Котел-утилизатор</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Скреперный транспортёр для уборки навоза</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Планетарный бетоносмеситель</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Подъемники</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Тележки</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">Неликвиды</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__middle">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <img alt="" class="footer__icon" src="assets/svg/location.svg">
+                        <p class="footer__text">
+                            Адрес: 352382, Краснодарский край, г. Кропоткин, ул. Пушкина, 79
+                        </p>
+                    </div>
+
+                    <div class="footer__column">
+                        <img alt="" class="footer__icon" src="assets/svg/contact-info.svg">
+                        <p class="footer__text">
+                            ТелФакс: 8(86138) 6-34-03, 6-34-06 E-mail: sale@semm.ru
+                        </p>
+                    </div>
+
+                    <div class="footer__column">
+                        <img alt="" class="footer__icon" src="assets/svg/schedule.svg">
+                        <p class="footer__text">
+                            Режим работы: пн-пт 8:00-17:00,<br>
+                            перерыв 12:00-13:00, сб-вс: выходной
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <p class="footer__text">
+                            &copy;&nbsp;АО&nbsp;&laquo;Элеватормельмаш&raquo; 2014&nbsp;г.
+                        </p>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__text">
+                            Разработка и&nbsp;маркетинг&nbsp;&mdash; WebCanape
+                        </p>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__text">
+                            Политика конфиденциальности
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.js">
+    </script>
+    <script src="assets/js/swiper.js">
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            effect: 'fade',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper__button-next',
+                prevEl: '.swiper__button-prev',
+            },
+            simulateTouch: false,
+            slidesPerGroup: 1,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            speed: 500
+        });
+    </script>
+</body>
+
+</html>
